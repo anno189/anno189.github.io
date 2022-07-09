@@ -556,8 +556,7 @@
 <p>将2022.Q1 的621只标的做成指数，叠加上证和创业，参见下图。<br>
 <img src="../images/stock_funds_202203_north_01.png" alt="83只北向 ETF 2022.Q1指数化"></p>
 <h3 id="权重统计-v2"><a class="header-anchor" href="#权重统计-v2">¶</a>权重统计</h3>
-<p>2022年 Q1 权重超过10的近半年中出现的频率，这些标的应该算是 A 股近期的脊梁了。<br>
-从行业分布上看更偏重于</p>
+<p>2022年 Q1 的指数重仓前10股票的近半年中出现的频率，这些标的应该算是 A 股近期的脊梁了。</p>
 <table>
 <thead>
 <tr>
@@ -573,152 +572,168 @@
 <tr>
 <td style="text-align:center">300750</td>
 <td style="text-align:center">宁德时代</td>
-<td style="text-align:center">25</td>
-<td style="text-align:center">25</td>
-<td style="text-align:center">14</td>
+<td style="text-align:center">21</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">12</td>
 <td style="text-align:center">电气设备</td>
 </tr>
 <tr>
 <td style="text-align:center">600036</td>
 <td style="text-align:center">招商银行</td>
-<td style="text-align:center">24</td>
-<td style="text-align:center">24</td>
 <td style="text-align:center">21</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">14</td>
 <td style="text-align:center">银行</td>
 </tr>
 <tr>
 <td style="text-align:center">603259</td>
 <td style="text-align:center">药明康德</td>
-<td style="text-align:center">19</td>
-<td style="text-align:center">19</td>
-<td style="text-align:center">19</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">16</td>
 <td style="text-align:center">化学制药</td>
-</tr>
-<tr>
-<td style="text-align:center">601166</td>
-<td style="text-align:center">兴业银行</td>
-<td style="text-align:center">18</td>
-<td style="text-align:center">19</td>
-<td style="text-align:center">18</td>
-<td style="text-align:center">银行</td>
 </tr>
 <tr>
 <td style="text-align:center">600900</td>
 <td style="text-align:center">长江电力</td>
-<td style="text-align:center">18</td>
-<td style="text-align:center">18</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">0</td>
 <td style="text-align:center">0</td>
 <td style="text-align:center">水力发电</td>
 </tr>
 <tr>
-<td style="text-align:center">000858</td>
-<td style="text-align:center">五 粮 液</td>
-<td style="text-align:center">18</td>
-<td style="text-align:center">18</td>
+<td style="text-align:center">601166</td>
+<td style="text-align:center">兴业银行</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">3</td>
 <td style="text-align:center">17</td>
-<td style="text-align:center">白酒</td>
-</tr>
-<tr>
-<td style="text-align:center">600519</td>
-<td style="text-align:center">贵州茅台</td>
-<td style="text-align:center">18</td>
-<td style="text-align:center">18</td>
-<td style="text-align:center">17</td>
-<td style="text-align:center">白酒</td>
-</tr>
-<tr>
-<td style="text-align:center">601012</td>
-<td style="text-align:center">隆基绿能</td>
-<td style="text-align:center">17</td>
-<td style="text-align:center">0</td>
-<td style="text-align:center">17</td>
-<td style="text-align:center">电气设备</td>
+<td style="text-align:center">银行</td>
 </tr>
 <tr>
 <td style="text-align:center">000333</td>
 <td style="text-align:center">美的集团</td>
-<td style="text-align:center">15</td>
+<td style="text-align:center">14</td>
 <td style="text-align:center">0</td>
-<td style="text-align:center">15</td>
+<td style="text-align:center">12</td>
 <td style="text-align:center">家用电器</td>
+</tr>
+<tr>
+<td style="text-align:center">601012</td>
+<td style="text-align:center">隆基绿能</td>
+<td style="text-align:center">14</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">14</td>
+<td style="text-align:center">电气设备</td>
+</tr>
+<tr>
+<td style="text-align:center">000858</td>
+<td style="text-align:center">五 粮 液</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">白酒</td>
 </tr>
 <tr>
 <td style="text-align:center">601318</td>
 <td style="text-align:center">中国平安</td>
-<td style="text-align:center">15</td>
+<td style="text-align:center">12</td>
 <td style="text-align:center">0</td>
-<td style="text-align:center">15</td>
+<td style="text-align:center">0</td>
 <td style="text-align:center">保险</td>
 </tr>
 <tr>
-<td style="text-align:center">300122</td>
-<td style="text-align:center">智飞生物</td>
-<td style="text-align:center">12</td>
-<td style="text-align:center">24</td>
+<td style="text-align:center">600519</td>
+<td style="text-align:center">贵州茅台</td>
 <td style="text-align:center">11</td>
-<td style="text-align:center">生物制药</td>
-</tr>
-<tr>
-<td style="text-align:center">300059</td>
-<td style="text-align:center">东方财富</td>
-<td style="text-align:center">12</td>
-<td style="text-align:center">23</td>
-<td style="text-align:center">23</td>
-<td style="text-align:center">证券</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">13</td>
+<td style="text-align:center">白酒</td>
 </tr>
 <tr>
 <td style="text-align:center">300014</td>
 <td style="text-align:center">亿纬锂能</td>
-<td style="text-align:center">12</td>
-<td style="text-align:center">25</td>
-<td style="text-align:center">13</td>
-<td style="text-align:center">电气设备</td>
-</tr>
-<tr>
-<td style="text-align:center">002415</td>
-<td style="text-align:center">海康威视</td>
 <td style="text-align:center">11</td>
-<td style="text-align:center">22</td>
-<td style="text-align:center">20</td>
-<td style="text-align:center">电器仪表</td>
-</tr>
-<tr>
-<td style="text-align:center">300274</td>
-<td style="text-align:center">阳光电源</td>
-<td style="text-align:center">10</td>
-<td style="text-align:center">22</td>
-<td style="text-align:center">10</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">11</td>
 <td style="text-align:center">电气设备</td>
 </tr>
 <tr>
-<td style="text-align:center">300760</td>
-<td style="text-align:center">迈瑞医疗</td>
+<td style="text-align:center">300122</td>
+<td style="text-align:center">智飞生物</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">4</td>
 <td style="text-align:center">10</td>
-<td style="text-align:center">22</td>
-<td style="text-align:center">9</td>
-<td style="text-align:center">医疗保健</td>
+<td style="text-align:center">生物制药</td>
 </tr>
 <tr>
 <td style="text-align:center">300142</td>
 <td style="text-align:center">沃森生物</td>
 <td style="text-align:center">10</td>
-<td style="text-align:center">22</td>
+<td style="text-align:center">0</td>
 <td style="text-align:center">10</td>
 <td style="text-align:center">生物制药</td>
 </tr>
 <tr>
+<td style="text-align:center">300059</td>
+<td style="text-align:center">东方财富</td>
+<td style="text-align:center">9</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">证券</td>
+</tr>
+<tr>
+<td style="text-align:center">002415</td>
+<td style="text-align:center">海康威视</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">电器仪表</td>
+</tr>
+<tr>
+<td style="text-align:center">300015</td>
+<td style="text-align:center">爱尔眼科</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">医疗保健</td>
+</tr>
+<tr>
 <td style="text-align:center">300124</td>
 <td style="text-align:center">汇川技术</td>
-<td style="text-align:center">9</td>
-<td style="text-align:center">21</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">0</td>
 <td style="text-align:center">9</td>
 <td style="text-align:center">电器仪表</td>
+</tr>
+<tr>
+<td style="text-align:center">300450</td>
+<td style="text-align:center">先导智能</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">专用机械</td>
+</tr>
+<tr>
+<td style="text-align:center">300274</td>
+<td style="text-align:center">阳光电源</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">电气设备</td>
+</tr>
+<tr>
+<td style="text-align:center">300760</td>
+<td style="text-align:center">迈瑞医疗</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">医疗保健</td>
 </tr>
 </tbody>
 </table>
 <p>将权重指数化</p>
 <p><img src="../images/stock_funds_202203_north_02.png" alt="北向 ETF 2022.Q1权重指数化"></p>
-<p>2022年1季度退出北向权重的包括中国建筑、国泰君安、兆易创新、中国铝业、海通证券、中国神华、中国石化、爱尔眼科、芒果超媒、乐普医疗、深南电路、爱美客、华润微、招商证券、国投资本、中国广核、华大基因、中国核电、宝信软件、航发动力、金风科技、泰格医药、康泰生物、康龙化成、中航光电、晶盛机电、卓胜微、先导智能</p>
+<p>2022年1季度退出北向权重的包括汤臣倍健、航发动力、伊利股份、长春高新、海通证券、TCL科技、中信博、东方证券、中国铝业、康龙化成、赣锋锂业、兆易创新、通威股份、卓胜微、恩捷股份、康泰生物</p>
 ]]></content>
       <categories>
         <category>量化</category>
