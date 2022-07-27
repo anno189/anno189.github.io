@@ -6410,11 +6410,11 @@ NexT version 8.11.1 (2022.05.01更新)</p>
 <li>市场宽指：上证180，深证100，创业板50，中小100</li>
 </ul>
 <p>选择标准：全市场宽指尽量覆盖大中小盘。上证、深证、中小、创业需要有代表性。</p>
-<p>弹性最佳的依次是：中证1000，中证500，创业50, 深圳100，沪深300，中证100，上证180</p>
+<p>弹性最佳的依次是：中证1000，中证500，创业50，中小100，深圳100，沪深300，中证100，上证180</p>
 <p><img src="../images/widthindex22072701.png" alt="近10年宽指涨跌幅对比"></p>
 <span id="more"></span>
 <h2 id="近10年宽指组合最优拟合"><a class="header-anchor" href="#近10年宽指组合最优拟合">¶</a>近10年宽指组合最优拟合</h2>
-<p>拟合标准：将不同的宽指做成策略组，以阶段涨幅为参考，当日买入，次日卖出。拟合出左右组合。<br>
+<p>拟合标准：将不同的宽指做成策略组，以阶段涨幅为参考，当日买入，次日卖出。拟合出组合净值。<br>
 拟合周期：2007-01-15 - 2022-07-26</p>
 <h3 id="频率统计"><a class="header-anchor" href="#频率统计">¶</a>频率统计</h3>
 <table>
@@ -6452,14 +6452,14 @@ NexT version 8.11.1 (2022.05.01更新)</p>
 <td style="text-align:center"></td>
 </tr>
 <tr>
-<td style="text-align:center">6.9148</td>
-<td style="text-align:center">1386</td>
+<td style="text-align:center">5.5091</td>
+<td style="text-align:center">927</td>
 <td style="text-align:center"></td>
 <td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">1313</td>
-<td style="text-align:center">1074</td>
-<td style="text-align:center"></td>
+<td style="text-align:center">239</td>
+<td style="text-align:center">528</td>
+<td style="text-align:center">966</td>
+<td style="text-align:center">1113</td>
 </tr>
 <tr>
 <td style="text-align:center">5.7278</td>
@@ -6470,6 +6470,16 @@ NexT version 8.11.1 (2022.05.01更新)</p>
 <td style="text-align:center">491</td>
 <td style="text-align:center">924</td>
 <td style="text-align:center">1052</td>
+</tr>
+<tr>
+<td style="text-align:center">6.9148</td>
+<td style="text-align:center">1386</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">1313</td>
+<td style="text-align:center">1074</td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">6.8654</td>
