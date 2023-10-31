@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><!-- hexo injector head_begin start --><link href="https://cdn.jsdelivr.net/npm/hexo-tag-common@0.0.5/css/index.css" rel="stylesheet"/><!-- hexo injector head_begin end -->
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="Snpm_pdZ9kq2rp13FqQ5KAx7Cx6qfCC_qGyDQIVGOgk">
+  <meta name="msvalidate.01" content="301CD4EA81A6093B3E376271303A3DC3">
+  <meta name="baidu-site-verification" content="code-zs8D7eqmP6">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic%7CRoboto+Slab:300,300italic,400,400italic,700,700italic%7CNoto+Serif+SC:300,300italic,400,400italic,700,700italic%7CMontserrat:300,300italic,400,400italic,700,700italic%7CPT+Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script src="https://fastly.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.anno189.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.11.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"algolia":{"appID":"6G7UN7LAPT","apiKey":"3c45a3262c417b5f0a0927e47288671f","indexName":"lifetimes","hits":{"per_page":10}}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="¶成分股60日线状态统计 ¶二级行业60日百分位                          var echarts4636 &#x3D; echarts.init(document.getElementById(&#39;echarts5610&#39;));          $.get(&#39;https:&#x2F;&#x2F;stock.anno189.com&#x2F;h5&#x2F;data&#x2F;ins60daylevel2.json&#39;).done(f">
+<meta property="og:type" content="article">
+<meta property="og:title" content="每日行业分析">
+<meta property="og:url" content="http://www.anno189.com/posts/16a415d4.html">
+<meta property="og:site_name" content="生活有时候">
+<meta property="og:description" content="¶成分股60日线状态统计 ¶二级行业60日百分位                          var echarts4636 &#x3D; echarts.init(document.getElementById(&#39;echarts5610&#39;));          $.get(&#39;https:&#x2F;&#x2F;stock.anno189.com&#x2F;h5&#x2F;data&#x2F;ins60daylevel2.json&#39;).done(f">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-01-30T04:39:04.000Z">
+<meta property="article:modified_time" content="2022-06-26T07:00:57.720Z">
+<meta property="article:author" content="Anno189">
+<meta property="article:tag" content="行业">
+<meta property="article:tag" content="分时">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://www.anno189.com/posts/16a415d4.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://www.anno189.com/posts/16a415d4.html","path":"posts/16a415d4.html","title":"每日行业分析"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>每日行业分析 | 生活有时候</title>
+  
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?e98087d2e2eaa860079dc028a13acf4c"></script>
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">生活有时候</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">我们要做的是提升生活品质<br />而非仅仅延缓死亡</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/posts/1b212dc8.html" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-timelines"><a href="/categories/Timeline/" rel="section"><i class="fa fa-wrench fa-fw"></i>Timelines</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">64</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">10</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">69</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container"></div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container">
+  <div class="algolia-stats"><hr></div>
+  <div class="algolia-hits"></div>
+  <div class="algolia-pagination"></div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%88%90%E5%88%86%E8%82%A160%E6%97%A5%E7%BA%BF%E7%8A%B6%E6%80%81%E7%BB%9F%E8%AE%A1"><span class="nav-number">1.</span> <span class="nav-text">成分股60日线状态统计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E7%BA%A7%E8%A1%8C%E4%B8%9A60%E6%97%A5%E7%99%BE%E5%88%86%E4%BD%8D"><span class="nav-number">1.1.</span> <span class="nav-text">二级行业60日百分位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E7%BA%A7%E8%A1%8C%E4%B8%9A20-60%E6%97%A5%E7%99%BE%E5%88%86%E4%BD%8D"><span class="nav-number">1.2.</span> <span class="nav-text">二级行业20-60日百分位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E7%BA%A7%E8%A1%8C%E4%B8%9A60%E6%97%A5%E7%99%BE%E5%88%86%E4%BD%8D"><span class="nav-number">1.3.</span> <span class="nav-text">三级行业60日百分位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E7%BA%A7%E8%A1%8C%E4%B8%9A20-60%E6%97%A5%E7%99%BE%E5%88%86%E4%BD%8D"><span class="nav-number">1.4.</span> <span class="nav-text">三级行业20-60日百分位</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%97%B6%E6%B6%A8%E8%B7%8C%E7%BB%9F%E8%AE%A1"><span class="nav-number">2.</span> <span class="nav-text">分时涨跌统计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#15%E5%88%86%E9%92%9F%E5%88%86%E6%97%B6"><span class="nav-number">2.1.</span> <span class="nav-text">15分钟分时</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#30%E5%88%86%E9%92%9F%E5%88%86%E6%97%B6"><span class="nav-number">2.2.</span> <span class="nav-text">30分钟分时</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#60%E5%88%86%E9%92%9F%E5%88%86%E6%97%B6"><span class="nav-number">2.3.</span> <span class="nav-text">60分钟分时</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4-v3"><span class="nav-number">3.</span> <span class="nav-text">更新时间</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Anno189"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Anno189</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">69</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">64</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/anno189" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;anno189" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:hhha@sina.com" title="E-Mail → mailto:hhha@sina.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/314832261" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;314832261" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://www.zhihu.com/people/anno189" title="Zhihu → http:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;anno189" rel="noopener" target="_blank"><i class="fab fa-zhihu fa-fw"></i>Zhihu</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://anno189.com/" title="http:&#x2F;&#x2F;anno189.com&#x2F;" rel="noopener" target="_blank">A.D.189</a>
+        </li>
+    </ul>
+  </div>
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div>
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://www.anno189.com/posts/16a415d4.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Anno189">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="生活有时候">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="每日行业分析 | 生活有时候">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          每日行业分析
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-01-30 12:39:04" itemprop="dateCreated datePublished" datetime="2022-01-30T12:39:04+08:00">2022-01-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-06-26 15:00:57" itemprop="dateModified" datetime="2022-06-26T15:00:57+08:00">2022-06-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%87%8F%E5%8C%96/" itemprop="url" rel="index"><span itemprop="name">量化</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/posts/16a415d4.html" class="post-meta-item leancloud_visitors" data-flag-title="每日行业分析" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.6k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="成分股60日线状态统计"><a class="header-anchor" href="#成分股60日线状态统计">¶</a>成分股60日线状态统计</h2>
+<h3 id="二级行业60日百分位"><a class="header-anchor" href="#二级行业60日百分位">¶</a>二级行业60日百分位</h3>
+
+    <div id="echarts5610" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+    
+    <script type="text/javascript">
+    var echarts4636 = echarts.init(document.getElementById('echarts5610'));
+    
+    $.get('https://stock.anno189.com/h5/data/ins60daylevel2.json').done(function (data) {
+        // alert(JSON.stringify(data)); 
+        echarts4636.setOption(data);
+    });
+    </script>
+    
+<span id="more"></span>
+<h3 id="二级行业20-60日百分位"><a class="header-anchor" href="#二级行业20-60日百分位">¶</a>二级行业20-60日百分位</h3>
+
+    <div id="echarts2306" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+    
+    <script type="text/javascript">
+    var echarts5563 = echarts.init(document.getElementById('echarts2306'));
+    
+    $.get('https://stock.anno189.com/h5/data/ins2060daylevel2.json').done(function (data) {
+        // alert(JSON.stringify(data)); 
+        echarts5563.setOption(data);
+    });
+    </script>
+    
+<h3 id="三级行业60日百分位"><a class="header-anchor" href="#三级行业60日百分位">¶</a>三级行业60日百分位</h3>
+
+    <div id="echarts5295" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+    
+    <script type="text/javascript">
+    var echarts1412 = echarts.init(document.getElementById('echarts5295'));
+    
+    $.get('https://stock.anno189.com/h5/data/ins60daylevel3.json').done(function (data) {
+        // alert(JSON.stringify(data)); 
+        echarts1412.setOption(data);
+    });
+    </script>
+    
+<h3 id="三级行业20-60日百分位"><a class="header-anchor" href="#三级行业20-60日百分位">¶</a>三级行业20-60日百分位</h3>
+
+    <div id="echarts840" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+    
+    <script type="text/javascript">
+    var echarts1226 = echarts.init(document.getElementById('echarts840'));
+    
+    $.get('https://stock.anno189.com/h5/data/ins2060daylevel3.json').done(function (data) {
+        // alert(JSON.stringify(data)); 
+        echarts1226.setOption(data);
+    });
+    </script>
+    
+<h2 id="分时涨跌统计"><a class="header-anchor" href="#分时涨跌统计">¶</a>分时涨跌统计</h2>
+<h3 id="15分钟分时"><a class="header-anchor" href="#15分钟分时">¶</a>15分钟分时</h3>
+
+    <div id="echarts3937" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+    
+    <script type="text/javascript">
+    var echarts1861 = echarts.init(document.getElementById('echarts3937'));
+    
+    $.get('https://stock.anno189.com/h5/data/ins15minlevel2.json').done(function (data) {
+        // alert(JSON.stringify(data)); 
+        echarts1861.setOption(data);
+    });
+    </script>
+    
+<h3 id="30分钟分时"><a class="header-anchor" href="#30分钟分时">¶</a>30分钟分时</h3>
+
+    <div id="echarts1708" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+    
+    <script type="text/javascript">
+    var echarts2099 = echarts.init(document.getElementById('echarts1708'));
+    
+    $.get('https://stock.anno189.com/h5/data/ins30minlevel2.json').done(function (data) {
+        // alert(JSON.stringify(data)); 
+        echarts2099.setOption(data);
+    });
+    </script>
+    
+<h3 id="60分钟分时"><a class="header-anchor" href="#60分钟分时">¶</a>60分钟分时</h3>
+
+    <div id="echarts9858" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+    
+    <script type="text/javascript">
+    var echarts2888 = echarts.init(document.getElementById('echarts9858'));
+    
+    $.get('https://stock.anno189.com/h5/data/ins60minlevel2.json').done(function (data) {
+        // alert(JSON.stringify(data)); 
+        echarts2888.setOption(data);
+    });
+    </script>
+    
+<h2 id="更新时间-v3"><a class="header-anchor" href="#更新时间-v3">¶</a>更新时间</h2>
+<p>页面大约每日19:00更新</p>
+
+    </div>
+
+    
+    
+    
+      
+
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Anno189
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://www.anno189.com/posts/16a415d4.html" title="每日行业分析">http://www.anno189.com/posts/16a415d4.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E8%A1%8C%E4%B8%9A/" rel="tag"><i class="fa fa-tag"></i> 行业</a>
+              <a href="/tags/%E5%88%86%E6%97%B6/" rel="tag"><i class="fa fa-tag"></i> 分时</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/fa0ac156.html" rel="prev" title="技术指标，大道至简">
+                  <i class="fa fa-chevron-left"></i> 技术指标，大道至简
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/posts/66abe924.html" rel="next" title="每日主要宽指相关性分析图">
+                  每日主要宽指相关性分析图 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Anno189</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">183k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">2:47</span>
+  </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://fastly.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://fastly.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="https://fastly.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  
+<script src="https://fastly.jsdelivr.net/npm/algoliasearch@4.13.0/dist/algoliasearch-lite.umd.js" integrity="sha256-UcrGMMl88PT0z5gvotNiqA7H30f1UJTUL9ZHey6i9jk=" crossorigin="anonymous"></script>
+<script src="https://fastly.jsdelivr.net/npm/instantsearch.js@4.40.5/dist/instantsearch.production.min.js" integrity="sha256-CzAaf9BTgvv6RaF+W1nW5duR5M+vXeZ0tofFuEfJ7ms=" crossorigin="anonymous"></script><script src="/js/third-party/search/algolia-search.js"></script>
+
+
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"default","dark":"dark"},"js":{"url":"https://fastly.jsdelivr.net/npm/mermaid@9.0.1/dist/mermaid.min.js","integrity":"sha256-CemUs9ITT7liCZpVMktcEw0BpAOZ1+mujlMB3UyuImU="}}</script>
+  <script src="/js/third-party/tags/mermaid.js"></script>
+
+
+
+  
+
+
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"oGdfdmrFSrPw8vDN3WnB34Qg-gzGzoHsz","app_key":"1hiLHPyEND7oHJAO7pb1zR0O","server_url":null,"security":false}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js"></script>
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://fastly.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<!-- calendar widget -->
+
+    <script src="//fastly.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//fastly.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
+
+
+<!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/hexo-tag-common@0.0.5/js/index.js"></script><!-- hexo injector body_end end --></body>
+</html>

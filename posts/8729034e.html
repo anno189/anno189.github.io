@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><!-- hexo injector head_begin start --><link href="https://cdn.jsdelivr.net/npm/hexo-tag-common@0.0.5/css/index.css" rel="stylesheet"/><!-- hexo injector head_begin end -->
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="Snpm_pdZ9kq2rp13FqQ5KAx7Cx6qfCC_qGyDQIVGOgk">
+  <meta name="msvalidate.01" content="301CD4EA81A6093B3E376271303A3DC3">
+  <meta name="baidu-site-verification" content="code-zs8D7eqmP6">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic%7CRoboto+Slab:300,300italic,400,400italic,700,700italic%7CNoto+Serif+SC:300,300italic,400,400italic,700,700italic%7CMontserrat:300,300italic,400,400italic,700,700italic%7CPT+Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script src="https://fastly.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.anno189.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.11.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"algolia":{"appID":"6G7UN7LAPT","apiKey":"3c45a3262c417b5f0a0927e47288671f","indexName":"lifetimes","hits":{"per_page":10}}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="¶FQuant Issue ¶ISSUE  [ ] 市场的日常状态统计 [ ] 集合竞价情况统计分析 [ ] Future数据感觉从 tdx 服务器中取数存在问题，主要是vol 和 amount。 [ ] pandas 的逐步替代，BaseFunction开始 ？？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="量化系统日志">
+<meta property="og:url" content="http://www.anno189.com/posts/8729034e.html">
+<meta property="og:site_name" content="生活有时候">
+<meta property="og:description" content="¶FQuant Issue ¶ISSUE  [ ] 市场的日常状态统计 [ ] 集合竞价情况统计分析 [ ] Future数据感觉从 tdx 服务器中取数存在问题，主要是vol 和 amount。 [ ] pandas 的逐步替代，BaseFunction开始 ？？">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-01-17T15:39:04.000Z">
+<meta property="article:modified_time" content="2023-04-23T05:05:38.138Z">
+<meta property="article:author" content="Anno189">
+<meta property="article:tag" content="关于">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://www.anno189.com/posts/8729034e.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://www.anno189.com/posts/8729034e.html","path":"posts/8729034e.html","title":"量化系统日志"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>量化系统日志 | 生活有时候</title>
+  
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?e98087d2e2eaa860079dc028a13acf4c"></script>
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">生活有时候</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">我们要做的是提升生活品质<br />而非仅仅延缓死亡</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/posts/1b212dc8.html" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-timelines"><a href="/categories/Timeline/" rel="section"><i class="fa fa-wrench fa-fw"></i>Timelines</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">64</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">10</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">69</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container"></div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container">
+  <div class="algolia-stats"><hr></div>
+  <div class="algolia-hits"></div>
+  <div class="algolia-pagination"></div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#FQuant-Issue"><span class="nav-number">1.</span> <span class="nav-text">FQuant Issue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ISSUE"><span class="nav-number">2.</span> <span class="nav-text">ISSUE</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E5%88%86%E7%B1%BB%E5%8F%8A%E7%89%B9%E6%AE%8A%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">3.</span> <span class="nav-text">基本分类及特殊的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B4%A2%E5%BC%95"><span class="nav-number">3.1.</span> <span class="nav-text">索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%99%A4%E6%9D%83%E9%99%A4%E6%81%AF%E5%88%86%E7%B1%BB"><span class="nav-number">3.2.</span> <span class="nav-text">除权除息分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#stock-day"><span class="nav-number">3.3.</span> <span class="nav-text">stock_day</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%96%E6%95%B0"><span class="nav-number">3.3.1.</span> <span class="nav-text">取数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%8D%E6%9D%83"><span class="nav-number">3.4.</span> <span class="nav-text">复权</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%90%E7%AE%97"><span class="nav-number">3.4.1.</span> <span class="nav-text">运算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Data-Factor-%E6%95%B0%E6%8D%AE%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">3.4.2.</span> <span class="nav-text">Data_Factor 数据的使用</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B8%AF%E8%82%A1%E5%8F%8A%E5%A4%96%E7%9B%98"><span class="nav-number">3.5.</span> <span class="nav-text">港股及外盘</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B7%B2%E7%9F%A5%E5%8F%AF%E8%83%BD%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">3.6.</span> <span class="nav-text">已知可能存在的问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%A5%E5%BF%97"><span class="nav-number">4.</span> <span class="nav-text">日志</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2023-01-25"><span class="nav-number">4.1.</span> <span class="nav-text">2023.01.25</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-12-02"><span class="nav-number">4.2.</span> <span class="nav-text">2022.12.02</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-12-01"><span class="nav-number">4.3.</span> <span class="nav-text">2022.12.01</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-11-11"><span class="nav-number">4.4.</span> <span class="nav-text">2022.11.11</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-10-31"><span class="nav-number">4.5.</span> <span class="nav-text">2022.10.31</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-10-28"><span class="nav-number">4.6.</span> <span class="nav-text">2022.10.28</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-10-27"><span class="nav-number">4.7.</span> <span class="nav-text">2022.10.27</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-10-26"><span class="nav-number">4.8.</span> <span class="nav-text">2022.10.26</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-10-25"><span class="nav-number">4.9.</span> <span class="nav-text">2022.10.25</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-10-24"><span class="nav-number">4.10.</span> <span class="nav-text">2022.10.24</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-10-21"><span class="nav-number">4.11.</span> <span class="nav-text">2022.10.21</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-10-19"><span class="nav-number">4.12.</span> <span class="nav-text">2022.10.19</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-10-17"><span class="nav-number">4.13.</span> <span class="nav-text">2022.10.17</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-10-15"><span class="nav-number">4.14.</span> <span class="nav-text">2022.10.15</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-10-13"><span class="nav-number">4.15.</span> <span class="nav-text">2022.10.13</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-10-12"><span class="nav-number">4.16.</span> <span class="nav-text">2022.10.12</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-10-11"><span class="nav-number">4.17.</span> <span class="nav-text">2022.10.11</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-10-10"><span class="nav-number">4.18.</span> <span class="nav-text">2022.10.10</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-10-09"><span class="nav-number">4.19.</span> <span class="nav-text">2022.10.09</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-10-08"><span class="nav-number">4.20.</span> <span class="nav-text">2022.10.08</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-10-02"><span class="nav-number">4.21.</span> <span class="nav-text">2022.10.02</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-27"><span class="nav-number">4.22.</span> <span class="nav-text">2022.09.27</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-26"><span class="nav-number">4.23.</span> <span class="nav-text">2022.09.26</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-25"><span class="nav-number">4.24.</span> <span class="nav-text">2022.09.25</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-23"><span class="nav-number">4.25.</span> <span class="nav-text">2022.09.23</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-22"><span class="nav-number">4.26.</span> <span class="nav-text">2022.09.22</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-21"><span class="nav-number">4.27.</span> <span class="nav-text">2022.09.21</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-18"><span class="nav-number">4.28.</span> <span class="nav-text">2022.09.18</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-16"><span class="nav-number">4.29.</span> <span class="nav-text">2022.09.16</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-15"><span class="nav-number">4.30.</span> <span class="nav-text">2022.09.15</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-14"><span class="nav-number">4.31.</span> <span class="nav-text">2022.09.14</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-13"><span class="nav-number">4.32.</span> <span class="nav-text">2022.09.13</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-12"><span class="nav-number">4.33.</span> <span class="nav-text">2022.09.12</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-10"><span class="nav-number">4.34.</span> <span class="nav-text">2022.09.10</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-09-v2"><span class="nav-number">4.35.</span> <span class="nav-text">2022.09.09</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-08"><span class="nav-number">4.36.</span> <span class="nav-text">2022.09.08</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-07"><span class="nav-number">4.37.</span> <span class="nav-text">2022.09.07</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-06"><span class="nav-number">4.38.</span> <span class="nav-text">2022.09.06</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-05"><span class="nav-number">4.39.</span> <span class="nav-text">2022.09.05</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-04"><span class="nav-number">4.40.</span> <span class="nav-text">2022.09.04</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-03"><span class="nav-number">4.41.</span> <span class="nav-text">2022.09.03</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-02-v2"><span class="nav-number">4.42.</span> <span class="nav-text">2022.09.02</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-09-01"><span class="nav-number">4.43.</span> <span class="nav-text">2022.09.01</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-08-29"><span class="nav-number">4.44.</span> <span class="nav-text">2022.08.29</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-08-27"><span class="nav-number">4.45.</span> <span class="nav-text">2022.08.27</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-08-26-v2"><span class="nav-number">4.46.</span> <span class="nav-text">2022.08.26</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-08-25"><span class="nav-number">4.47.</span> <span class="nav-text">2022.08.25</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2022-08-24"><span class="nav-number">4.48.</span> <span class="nav-text">2022.08.24</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Anno189"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Anno189</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">69</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">64</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/anno189" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;anno189" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:hhha@sina.com" title="E-Mail → mailto:hhha@sina.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/314832261" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;314832261" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://www.zhihu.com/people/anno189" title="Zhihu → http:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;anno189" rel="noopener" target="_blank"><i class="fab fa-zhihu fa-fw"></i>Zhihu</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://anno189.com/" title="http:&#x2F;&#x2F;anno189.com&#x2F;" rel="noopener" target="_blank">A.D.189</a>
+        </li>
+    </ul>
+  </div>
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div>
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://www.anno189.com/posts/8729034e.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Anno189">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="生活有时候">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="量化系统日志 | 生活有时候">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          量化系统日志
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-01-17 23:39:04" itemprop="dateCreated datePublished" datetime="2022-01-17T23:39:04+08:00">2022-01-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-04-23 13:05:38" itemprop="dateModified" datetime="2023-04-23T13:05:38+08:00">2023-04-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Timeline/" itemprop="url" rel="index"><span itemprop="name">Timeline</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/posts/8729034e.html" class="post-meta-item leancloud_visitors" data-flag-title="量化系统日志" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>5.6k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>5 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="FQuant-Issue"><a class="header-anchor" href="#FQuant-Issue">¶</a>FQuant Issue</h2>
+<h2 id="ISSUE"><a class="header-anchor" href="#ISSUE">¶</a>ISSUE</h2>
+<ul>
+<li>[ ] 市场的日常状态统计</li>
+<li>[ ] 集合竞价情况统计分析</li>
+<li>[ ] Future数据感觉从 tdx 服务器中取数存在问题，主要是vol 和 amount。</li>
+<li>[ ] <s>pandas 的逐步替代，BaseFunction开始 ？？</s></li>
+</ul>
+<span id="more"></span>
+<h2 id="基本分类及特殊的问题"><a class="header-anchor" href="#基本分类及特殊的问题">¶</a>基本分类及特殊的问题</h2>
+<h3 id="索引"><a class="header-anchor" href="#索引">¶</a>索引</h3>
+<ul>
+<li>每个新建数据表的索引！！！</li>
+</ul>
+<h3 id="除权除息分类"><a class="header-anchor" href="#除权除息分类">¶</a>除权除息分类</h3>
+<p>1: 除权除息, 2: 送配股上市, 3: 非流通股上市, 4: 未知股本变动,5: 股本变化,6: 增发新股, 7: 股份回购, 8: 增发新股上市, 9: 转配股上市,10: 可转债上市,11: 扩缩股, 12: 非流通股缩股, 13: 送认购权证, 14: 送认沽权证</p>
+<h3 id="stock-day"><a class="header-anchor" href="#stock-day">¶</a>stock_day</h3>
+<h4 id="取数"><a class="header-anchor" href="#取数">¶</a>取数</h4>
+<p>停盘日，会存在一条记录，O/C/H/W 为上日收盘价格, V/A 为最小浮点数。从数据库直接取数需过滤掉数据。条件：vol &gt; 1</p>
+<h3 id="复权"><a class="header-anchor" href="#复权">¶</a>复权</h3>
+<h4 id="运算"><a class="header-anchor" href="#运算">¶</a>运算</h4>
+<ul>
+<li>复权需要考虑复权参数，价格，总股本和流通股</li>
+<li>历史市值需要总股本</li>
+<li>历史换手率需要流通股，无法考虑可流通股，只能从财务报告中体现。暂时不考虑可流通股，只使用流通股运算。</li>
+</ul>
+<h4 id="Data-Factor-数据的使用"><a class="header-anchor" href="#Data-Factor-数据的使用">¶</a>Data_Factor 数据的使用</h4>
+<ul>
+<li>价格为前复权价格，预算市值时候需要使用复权数据。 values / adj</li>
+<li>每日需要根据财务信息重新运算xdxr 变化的标的</li>
+</ul>
+<h3 id="港股及外盘"><a class="header-anchor" href="#港股及外盘">¶</a>港股及外盘</h3>
+<p>通达信港股数据会延迟15分钟，是否需要替换数据源</p>
+<ul>
+<li>[ ] HSI取数，从 sina 或者 yahoo（通达信实盘滞后15分钟）
+<ul>
+<li>[ ] <a target="_blank" rel="noopener" href="https://stock.finance.sina.com.cn/hkstock/api/openapi.php/HK_StockService.getHKMinline?symbol=HSI&amp;random=1644907014972&amp;callback=var%20t1hkHSI=">https://stock.finance.sina.com.cn/hkstock/api/openapi.php/HK_StockService.getHKMinline?symbol=HSI&amp;random=1644907014972&amp;callback=var t1hkHSI=</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="已知可能存在的问题"><a class="header-anchor" href="#已知可能存在的问题">¶</a>已知可能存在的问题</h3>
+<p>stock_info 中会漏掉某一日的数据（通达信服务器取数问题）<br>
+stock_adj 在运算中会漏掉当前某一天的数据，（原因不明，可能会导致运算错误）</p>
+<h2 id="日志"><a class="header-anchor" href="#日志">¶</a>日志</h2>
+<h3 id="2023-01-25"><a class="header-anchor" href="#2023-01-25">¶</a>2023.01.25</h3>
+<ul>
+<li>修订行业 Facator 的重复数据问题,以及引起的图表问题。</li>
+<li>重新运算 stock_data_corr 数据，便于后期使用。</li>
+<li>更新FQuant Web 的 Echarts 插件，修订了一些显示上的错误。</li>
+<li>更新了每日盘前策略输出。</li>
+<li>增加行业分类：深度价值、价值成长、高成长，重构了相关图表。</li>
+</ul>
+<h3 id="2022-12-02"><a class="header-anchor" href="#2022-12-02">¶</a>2022.12.02</h3>
+<ul>
+<li>模拟盘新增股票池参数，增加排序和分段取数参数。</li>
+</ul>
+<h3 id="2022-12-01"><a class="header-anchor" href="#2022-12-01">¶</a>2022.12.01</h3>
+<ul>
+<li>QA_SU_save_stock_xdxr，函数效率优化</li>
+<li>新增函数QA_SU_save_stock_xdxr_one，QA_SU_check_stock_xdxr</li>
+</ul>
+<h3 id="2022-11-11"><a class="header-anchor" href="#2022-11-11">¶</a>2022.11.11</h3>
+<ul>
+<li>完成FQuant Web 1.3.3更新。</li>
+</ul>
+<h3 id="2022-10-31"><a class="header-anchor" href="#2022-10-31">¶</a>2022.10.31</h3>
+<ul>
+<li>竞价前5分钟</li>
+</ul>
+<h3 id="2022-10-28"><a class="header-anchor" href="#2022-10-28">¶</a>2022.10.28</h3>
+<ul>
+<li>新增实时5分钟累计量比提升个股。</li>
+<li>新增仓位控制策略，上证5日线。需要同步调整下跌空仓逻辑</li>
+</ul>
+<h3 id="2022-10-27"><a class="header-anchor" href="#2022-10-27">¶</a>2022.10.27</h3>
+<ul>
+<li>更新 FQuant Web的一些统计算法错误。</li>
+</ul>
+<h3 id="2022-10-26"><a class="header-anchor" href="#2022-10-26">¶</a>2022.10.26</h3>
+<ul>
+<li>FQuant Web 新增一些图表</li>
+</ul>
+<h3 id="2022-10-25"><a class="header-anchor" href="#2022-10-25">¶</a>2022.10.25</h3>
+<ul>
+<li>指数3日线空仓逻辑，这个不是个宏观逻辑。溢价不高，但是可以用。</li>
+</ul>
+<h3 id="2022-10-24"><a class="header-anchor" href="#2022-10-24">¶</a>2022.10.24</h3>
+<ul>
+<li>市场百分位统计</li>
+</ul>
+<h3 id="2022-10-21"><a class="header-anchor" href="#2022-10-21">¶</a>2022.10.21</h3>
+<ul>
+<li>concept_data_base, industry_data_base。修订流通股本。</li>
+<li>concept_data_base, 增加</li>
+</ul>
+<h3 id="2022-10-19"><a class="header-anchor" href="#2022-10-19">¶</a>2022.10.19</h3>
+<ul>
+<li>整理资金容量，整理策略及收益，去除 hhv 逻辑。</li>
+<li>[ ] hhv 逻辑动态浮动。</li>
+<li>QA_util_date_gap, 存在一个 wrong date 的隐患，有可能导致取数错误。修订后待观察。</li>
+</ul>
+<h3 id="2022-10-17"><a class="header-anchor" href="#2022-10-17">¶</a>2022.10.17</h3>
+<ul>
+<li>concept 中位数评分体系无法使用，暂不考虑概念类的应用。</li>
+</ul>
+<h3 id="2022-10-15"><a class="header-anchor" href="#2022-10-15">¶</a>2022.10.15</h3>
+<ul>
+<li>增加 concept, industry 的统计中位数评分体系</li>
+<li>评分阈值 -3, 回测, 结果低于str60_base, 由于其他策略, 可以考虑应用。</li>
+</ul>
+<h3 id="2022-10-13"><a class="header-anchor" href="#2022-10-13">¶</a>2022.10.13</h3>
+<ul>
+<li>增加回测清仓逻辑</li>
+<li>增加行业、概念的20日最小量的统计</li>
+<li>修改了行业、概念的_data_base 的数据表名称</li>
+</ul>
+<h3 id="2022-10-12"><a class="header-anchor" href="#2022-10-12">¶</a>2022.10.12</h3>
+<ul>
+<li>输出两个策略结果到微信</li>
+<li>更新 industry_base_data ,删除不在使用的字段，新增成交金额和流通市值，后续做图用。</li>
+<li>更新 concept_base_data ,删除不在使用的字段，新增成交金额和流通市值，后续做图用。</li>
+</ul>
+<h3 id="2022-10-11"><a class="header-anchor" href="#2022-10-11">¶</a>2022.10.11</h3>
+<ul>
+<li>修正回测交易记录的存储错误, 显示错误</li>
+<li>修正回测图表显示中的两个错误。</li>
+<li>新增每日上证/创业的风格判断</li>
+<li>新增市场多空状态和策略统计，更新了 Web 客户端</li>
+<li>[ ] VitePWA 自动更新问题</li>
+</ul>
+<h3 id="2022-10-10"><a class="header-anchor" href="#2022-10-10">¶</a>2022.10.10</h3>
+<ul>
+<li>去除成交金额相关的过滤器</li>
+<li>DataFrame_StockList, 增加指数沪深300/中证500/中证1000/其他标识</li>
+<li>新增每日盘后数据统计及简单分析</li>
+</ul>
+<h3 id="2022-10-09"><a class="header-anchor" href="#2022-10-09">¶</a>2022.10.09</h3>
+<ul>
+<li>删除cr相关算法，无明显效果</li>
+<li>调整spcorr算法，删除 cr 相关，效果待查看</li>
+<li>重新运算market_data_base，增加强势指数、行业、概念。</li>
+</ul>
+<h3 id="2022-10-08"><a class="header-anchor" href="#2022-10-08">¶</a>2022.10.08</h3>
+<ul>
+<li>重新调整 str_all 策略池，提高池子的综合成功率。</li>
+<li>成交金额测算，金额越小，弹性越好，成功率越高，风险越大。</li>
+</ul>
+<h3 id="2022-10-02"><a class="header-anchor" href="#2022-10-02">¶</a>2022.10.02</h3>
+<ul>
+<li>完善空仓逻辑，可以多逻辑组合</li>
+<li>修正了empty_stra_base的逻辑错误，可以提升部分净值。</li>
+</ul>
+<h3 id="2022-09-27"><a class="header-anchor" href="#2022-09-27">¶</a>2022.09.27</h3>
+<ul>
+<li>统计市场涨跌停情况，最高空间板等。重新运算 market_data_base</li>
+<li>SaveMarketBaseData 需要重新运算，解决 rate 的问题</li>
+</ul>
+<h3 id="2022-09-26"><a class="header-anchor" href="#2022-09-26">¶</a>2022.09.26</h3>
+<ul>
+<li>优化 market 基础统计数据，改成按日期运算保存。</li>
+<li>市场成交金额百分位统计，并部署</li>
+<li>调整 stock_data_base 涨跌停统计算法，不统计 ST 的票</li>
+<li>重新运算 stock_data_base</li>
+</ul>
+<h3 id="2022-09-25"><a class="header-anchor" href="#2022-09-25">¶</a>2022.09.25</h3>
+<ul>
+<li>校验stock服务器，删除部分无法连接的服务器。部分服务器读取880008数据从2022年开始，已经删除。</li>
+<li>更新880008的数据</li>
+</ul>
+<h3 id="2022-09-23"><a class="header-anchor" href="#2022-09-23">¶</a>2022.09.23</h3>
+<ul>
+<li>去掉100%换手百分位，效率太低。</li>
+<li>暂时去掉周线运算。</li>
+<li>更新手机端预测日成交量显示图下限。</li>
+</ul>
+<h3 id="2022-09-22"><a class="header-anchor" href="#2022-09-22">¶</a>2022.09.22</h3>
+<ul>
+<li>重新运算所有票的ExtentData，增加liutongguben</li>
+<li>运算全市场状态</li>
+</ul>
+<h3 id="2022-09-21"><a class="header-anchor" href="#2022-09-21">¶</a>2022.09.21</h3>
+<ul>
+<li>Factor Data 新增 MA3，删除 Position，调整 CROSSMA5，CROSSMA10，CROSSMA20，CROSSMA30，CROSSMA60，CROSSMA120，CROSSMA250</li>
+<li>重新运算所有股票池数据</li>
+<li>调整 QA_util_date_gap 返回值，不在输出wrong date，避免后期运算的错误。</li>
+</ul>
+<h3 id="2022-09-18"><a class="header-anchor" href="#2022-09-18">¶</a>2022.09.18</h3>
+<ul>
+<li>新增股票周线的 Factor 运算，每日重新运算。</li>
+<li>[ ]QA 中 stock_day_adv 存在 week/month/year 的函数错误，需要使用 resample 函数</li>
+<li>str60p20策略，卖出策略调整根据指定列的价格卖出。测试止损配置：根据最高值的-7%止损，拟合效果最好。</li>
+</ul>
+<h3 id="2022-09-16"><a class="header-anchor" href="#2022-09-16">¶</a>2022.09.16</h3>
+<ul>
+<li>回测 str60p20策略，周期下跌的空仓和仓位算法，不理想。</li>
+</ul>
+<h3 id="2022-09-15"><a class="header-anchor" href="#2022-09-15">¶</a>2022.09.15</h3>
+<ul>
+<li>extent_data 列增加前一日交易日收盘价格，重新运算数据。</li>
+<li>重构回测算法逻辑，①买入逻辑，逻辑中包括买入点、总仓位管理和不交易逻辑三部分。</li>
+<li>重构回测算法逻辑，②卖出逻辑，包括开盘卖出、盘中卖出、收盘卖出等三部分。</li>
+</ul>
+<h3 id="2022-09-14"><a class="header-anchor" href="#2022-09-14">¶</a>2022.09.14</h3>
+<ul>
+<li>增加了突破策略的逻辑</li>
+</ul>
+<h3 id="2022-09-13"><a class="header-anchor" href="#2022-09-13">¶</a>2022.09.13</h3>
+<ul>
+<li>str60p20策略定形！</li>
+<li>增加盘前15分钟保存市场数据，便于研究竞价情况。</li>
+<li>晚上数据校验功能，校验指数、股票数据零、股票扩展数据的验证，可以提前发现数据问题。</li>
+<li>修订了 strong 策略的一个逻辑问题。</li>
+</ul>
+<h3 id="2022-09-12"><a class="header-anchor" href="#2022-09-12">¶</a>2022.09.12</h3>
+<ul>
+<li>完成全市场数据重新运算，消除了之前的所有数据问题。</li>
+<li>策略回测增加 reportHTML 函数，使用quantstats。并在每日交易后输出到https://www.anno189.com/h5/data/策略代码.HTML 。</li>
+<li>增加宽指权重、行业权重的时序切片显示。</li>
+<li>修正了新上市股票复权流通股和总股本的无数据错误。</li>
+<li>重新运算所有股票池数据。</li>
+</ul>
+<h3 id="2022-09-10"><a class="header-anchor" href="#2022-09-10">¶</a>2022.09.10</h3>
+<ul>
+<li>完成回测算法，效率大幅提升，并重新运算所有现有策略。</li>
+<li>修正了相关性运算的一个高度错误， pd.concat。</li>
+<li>重新运算所有指数数据</li>
+<li>新增宽指月趋势热力图</li>
+</ul>
+<h3 id="2022-09-09-v2"><a class="header-anchor" href="#2022-09-09-v2">¶</a>2022.09.09</h3>
+<ul>
+<li>整理交易原则</li>
+<li>回测完善了日仓位记录信息，包括持仓标的日内价格，便于统计分析。</li>
+<li>重新整了回测算法，提升效率，待测试。</li>
+</ul>
+<h3 id="2022-09-08"><a class="header-anchor" href="#2022-09-08">¶</a>2022.09.08</h3>
+<ul>
+<li>整理 Base/Future 的服务器列表。剔除连接测试失败的。</li>
+<li>整理MFI 指标</li>
+<li>检测支持序列的基础函数，支持序列包括COUNT/HHV/LLV/REF, 优化运算高度，提升运算效率。高度应该为运算的开始日期到结束日期的交易周期</li>
+<li>优化 Future 数据计算的高度，提高效率。</li>
+</ul>
+<h3 id="2022-09-07"><a class="header-anchor" href="#2022-09-07">¶</a>2022.09.07</h3>
+<ul>
+<li>REF_STR 函数，增加了非数值的 REF 功能。</li>
+<li>优化了 HHV/LLV 的序列参数时的运算高度，增加 length，提高运算效率。</li>
+<li>优化了 Factor 中结果运算的效率，增加了日期周期的判断。</li>
+<li>stock_data_position 增加索引</li>
+<li>补充季报数据 2020.Q4/2020.Q3/2020.Q2/2020.Q1</li>
+<li>补充季报数据 2019.Q4/2019.Q3/2019.Q2/2019.Q1</li>
+<li>补充季报数据 2018.Q4/2018.Q3/2018.Q2, 同花顺没有2018Q1之前的数据</li>
+</ul>
+<h3 id="2022-09-06"><a class="header-anchor" href="#2022-09-06">¶</a>2022.09.06</h3>
+<ul>
+<li>增加策略仓位管理入口类函数，可以根据某种规则调整仓位策略。CPools_PositionStra</li>
+<li>回测来看，仓位管理可以降低波动，但还是要跟随核心策略的逻辑。如果是高频趋势的，仓位管理的意义不大。</li>
+<li>优化DataFrame_StockList的列属性，ipo_data, 字符串</li>
+</ul>
+<h3 id="2022-09-05"><a class="header-anchor" href="#2022-09-05">¶</a>2022.09.05</h3>
+<ul>
+<li><s>重新运算所有指数的Factor</s></li>
+<li>修正 MAX()/MIN()函数</li>
+</ul>
+<h3 id="2022-09-04"><a class="header-anchor" href="#2022-09-04">¶</a>2022.09.04</h3>
+<ul>
+<li><s>重新运算所有指数的Factor，MAX()函数错误，需要重算</s></li>
+<li>补充季报数据 2022.Q2/2022.Q1/2021.Q4/2021.Q3/2021.Q2/2021.Q1</li>
+<li>北向83只 ETF 初步统计分析，Jupyter Notebook。</li>
+</ul>
+<h3 id="2022-09-03"><a class="header-anchor" href="#2022-09-03">¶</a>2022.09.03</h3>
+<ul>
+<li>整理通达信函数，优化 HHV, LLV, 新增 SUBBARS。</li>
+<li><s>从 MyTT 中整理函数，新增若干 <a target="_blank" rel="noopener" href="https://github.com/mpquant/MyTT">https://github.com/mpquant/MyTT</a></s></li>
+<li><s>[ ] 待整理二级函数</s></li>
+<li>新增总股本复权，QA_data_stock_liquidity, to_liquidity。可用于运算市值。</li>
+<li>校验历史数据中换手率算法</li>
+<li>Factor 增加100%换手率周期，总市值和流通市值。</li>
+<li>修订 Factor 的 open, close, high, low的运算错误。重新运算股票的所有数据。</li>
+</ul>
+<h3 id="2022-09-02-v2"><a class="header-anchor" href="#2022-09-02-v2">¶</a>2022.09.02</h3>
+<ul>
+<li>策略空仓入口方式改成类函数，可以根据某种规则调整空仓策略。CPools_EmptyStra。</li>
+<li><s>新增空仓策略市场60min。empty_stra_ins60min, 效果不理想。</s></li>
+<li><s>测试空仓的清仓逻辑，无明显效果，弃用。</s></li>
+<li>同步2022年中报数据。</li>
+<li>martet新增函数marketWillStockList，未上市股票列表，返回DataFrame</li>
+<li>调整marketInitStockList函数，去除未上市股票，增加 sse 列标记沪深市场</li>
+<li>增加每周末重新计算净值功能，每周五17点35分运行，消除除权导致的误差。会导致净值变化。</li>
+<li>恢复每日15:00的数据运算</li>
+<li>整理Celery 的代码逻辑，删除一些无用的代码和功能</li>
+</ul>
+<h3 id="2022-09-01"><a class="header-anchor" href="#2022-09-01">¶</a>2022.09.01</h3>
+<ul>
+<li>修改策略回测函数入口，改成数组组合方式。可以对相同的股票池进行不同策略的回测。</li>
+<li>策略回测出口方式改成类函数，可以根据某种规则调整止盈止损比例。CPools_SellStra。</li>
+<li><s>回测宽指动态止盈止损逻辑，效果不明显，放弃。</s></li>
+<li>重新运算近期回测，08.29 修订stock 运算中复权后数据的后续，因小数四舍五入的问题。</li>
+</ul>
+<h3 id="2022-08-29"><a class="header-anchor" href="#2022-08-29">¶</a>2022.08.29</h3>
+<ul>
+<li>修订stock 运算中复权后数据的小数位，压缩数据库大小。价格保留2位。复权 adj 保留4位。</li>
+</ul>
+<h3 id="2022-08-27"><a class="header-anchor" href="#2022-08-27">¶</a>2022.08.27</h3>
+<ul>
+<li><s>新增 strong_long 策略及回测，选择有可能形成趋势的标的，持仓过程中去弱存强。未拟合。效果不理想。</s></li>
+</ul>
+<h3 id="2022-08-26-v2"><a class="header-anchor" href="#2022-08-26-v2">¶</a>2022.08.26</h3>
+<ul>
+<li><s>恢复回测的上证空仓逻辑, 调整到2022.09.02功能中</s></li>
+</ul>
+<h3 id="2022-08-25"><a class="header-anchor" href="#2022-08-25">¶</a>2022.08.25</h3>
+<ul>
+<li>更新code_province表数据，从 csv 文件中读取维护，不在使用stock_info_tushare表，并删除数据表stock_info_tushare</li>
+<li>修订分时运算的 HSI, IFL0取数，使用分类参数，确保取数正确</li>
+<li>行业和概念暂时取消的 RPS 的运算</li>
+<li>增加夜间自动压缩数据库功能</li>
+<li>去除 sotck 的 corr 运算，暂时没有使用场景。</li>
+<li>仅计算几个指数的 corrma 用于多空判断。</li>
+</ul>
+<h3 id="2022-08-24"><a class="header-anchor" href="#2022-08-24">¶</a>2022.08.24</h3>
+<ul>
+<li>修复 QuantAxis 中QA_SU_save_future_list的唯一索引错误。</li>
+<li>[ ] QA_SU_save_single_future_day函数依然存在代码和分类重叠的情况，临时修改!!</li>
+<li>[ ] pytdx 的Future取数有些问题。 在取美股的 YANG 和 YINN 的时候，但是5_CNTY，8_ATY没有这个问题。问题同上。</li>
+<li>[ ] pytdx 的Future取数, trade和 vol 的问题以及 position 的问题。trade 是成交量但是有问题，需要调整。</li>
+<li>future_day 的取数运作增加了 amount 的列</li>
+<li>修订了由于 Future 取数问题导致数据错误，‘000961’, ‘000962’, ‘000963’, ‘000994’, ‘000995’</li>
+<li>删除数据表 index_data_base，使用 index_data_extent</li>
+<li>增加数据表 stock_data_extent，为了用于 rps 的运算，extent 表用于 rps 的运算</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+      
+
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Anno189
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://www.anno189.com/posts/8729034e.html" title="量化系统日志">http://www.anno189.com/posts/8729034e.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E5%85%B3%E4%BA%8E/" rel="tag"><i class="fa fa-tag"></i> 关于</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/42c92d7.html" rel="prev" title="是的，我们开始搞基了！">
+                  <i class="fa fa-chevron-left"></i> 是的，我们开始搞基了！
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/posts/2f7c3ece.html" rel="next" title="原则①：生活原则概要与列表">
+                  原则①：生活原则概要与列表 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Anno189</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">183k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">2:47</span>
+  </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://fastly.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://fastly.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="https://fastly.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  
+<script src="https://fastly.jsdelivr.net/npm/algoliasearch@4.13.0/dist/algoliasearch-lite.umd.js" integrity="sha256-UcrGMMl88PT0z5gvotNiqA7H30f1UJTUL9ZHey6i9jk=" crossorigin="anonymous"></script>
+<script src="https://fastly.jsdelivr.net/npm/instantsearch.js@4.40.5/dist/instantsearch.production.min.js" integrity="sha256-CzAaf9BTgvv6RaF+W1nW5duR5M+vXeZ0tofFuEfJ7ms=" crossorigin="anonymous"></script><script src="/js/third-party/search/algolia-search.js"></script>
+
+
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"default","dark":"dark"},"js":{"url":"https://fastly.jsdelivr.net/npm/mermaid@9.0.1/dist/mermaid.min.js","integrity":"sha256-CemUs9ITT7liCZpVMktcEw0BpAOZ1+mujlMB3UyuImU="}}</script>
+  <script src="/js/third-party/tags/mermaid.js"></script>
+
+
+
+  
+
+
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"oGdfdmrFSrPw8vDN3WnB34Qg-gzGzoHsz","app_key":"1hiLHPyEND7oHJAO7pb1zR0O","server_url":null,"security":false}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js"></script>
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://fastly.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<!-- calendar widget -->
+
+    <script src="//fastly.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//fastly.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
+
+
+<!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/hexo-tag-common@0.0.5/js/index.js"></script><!-- hexo injector body_end end --></body>
+</html>
