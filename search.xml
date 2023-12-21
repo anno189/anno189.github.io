@@ -5,15 +5,15 @@
     <url>/posts/42c92d7.html</url>
     <content><![CDATA[<h2 id="菜篮子III号组合应用组净值"><a class="header-anchor" href="#菜篮子III号组合应用组净值">¶</a>菜篮子III号组合应用组净值</h2>
 
-    <div id="echarts1796" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts971" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts8379 = echarts.init(document.getElementById('echarts1796'));
+    var echarts1644 = echarts.init(document.getElementById('echarts971'));
     
     $.get('https://stock.anno189.com/h5/data/str60p20_super_003_echarts_lines.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts8379.setOption(data);
+        echarts1644.setOption(data);
     });
     </script>
     
@@ -45,15 +45,15 @@
     <url>/posts/268d777d.html</url>
     <content><![CDATA[<h3 id="宽指趋势相对权重-v2"><a class="header-anchor" href="#宽指趋势相对权重-v2">¶</a>宽指趋势相对权重</h3>
 
-    <div id="echarts4929" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts5303" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts1118 = echarts.init(document.getElementById('echarts4929'));
+    var echarts8261 = echarts.init(document.getElementById('echarts5303'));
     
     $.get('https://stock.anno189.com/h5/data/indexweight_wr.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts1118.setOption(data);
+        echarts8261.setOption(data);
     });
     </script>
     
@@ -61,48 +61,48 @@
 <span id="more"></span>
 <h3 id="行业趋势相对权重"><a class="header-anchor" href="#行业趋势相对权重">¶</a>行业趋势相对权重</h3>
 
-    <div id="echarts2288" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts7476" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts3037 = echarts.init(document.getElementById('echarts2288'));
+    var echarts1645 = echarts.init(document.getElementById('echarts7476'));
     
     $.get('https://stock.anno189.com/h5/data/industryweight_wr.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts3037.setOption(data);
+        echarts1645.setOption(data);
     });
     </script>
     
 <a href="/posts/8620333.html" title="每日行业相对权重">每日行业相对权重</a>
 <h3 id="概念趋势相对权重-v3"><a class="header-anchor" href="#概念趋势相对权重-v3">¶</a>概念趋势相对权重</h3>
 
-    <div id="echarts3971" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts3351" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts1023 = echarts.init(document.getElementById('echarts3971'));
+    var echarts2187 = echarts.init(document.getElementById('echarts3351'));
     
     $.get('https://stock.anno189.com/h5/data/conceptspcorrweight.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts1023.setOption(data);
+        echarts2187.setOption(data);
     });
     </script>
     
 <a href="/posts/648576a4.html" title="每日概念相对权重">每日概念相对权重</a>
 <h3 id="日成交金额行业集中度-v2"><a class="header-anchor" href="#日成交金额行业集中度-v2">¶</a>日成交金额行业集中度</h3>
 
-    <div id="echarts7013" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts2773" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts7317 = echarts.init(document.getElementById('echarts7013'));
+    var echarts5274 = echarts.init(document.getElementById('echarts2773'));
     
     $.get('https://stock.anno189.com/h5/data/moneryfocus.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts7317.setOption(data);
+        echarts5274.setOption(data);
     });
 
-    echarts7317.setOption(
+    echarts5274.setOption(
       {
         "tooltip": {
             "formatter": function (params) {return params.value[2] + ':' + params.value[3] + '亿';},
@@ -114,15 +114,15 @@
 <a href="/posts/40e58dc.html" title="每日成交金额行业集中度">每日成交金额行业集中度</a>
 <h3 id="二级行业60日"><a class="header-anchor" href="#二级行业60日">¶</a>二级行业60日</h3>
 
-    <div id="echarts5774" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts8147" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts2718 = echarts.init(document.getElementById('echarts5774'));
+    var echarts6992 = echarts.init(document.getElementById('echarts8147'));
     
     $.get('https://stock.anno189.com/h5/data/ins60daylevel2.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts2718.setOption(data);
+        echarts6992.setOption(data);
     });
     </script>
     
@@ -254,6 +254,7 @@
 <p>一个是政策上的变化给出的资金量时间窗口只到2023年1月。而最重要的是在这个极其有限的时间窗口里，我意外的食物中毒，从上吐下泻到突然晕厥。在醒来后想了很久才想明白“我是谁？我在哪？”这两个问题后，我觉得是超自然力量在劝导我，也许是我的祖父，也许是我的外祖母，也许是教员，也许是玉皇大帝……。</p>
 <p>今年策略的结果就是这个样子。如果硬上了，按照预想，大概率在6月份评估的时候就清盘了，那时候的净值是0.988。</p>
 <p>不管当时劝导我的是谁，我都应该很感谢TA。</p>
+<p>最后，感谢在做私募这件事上帮过我的朋友们。</p>
 <hr>
 <hr class="footnotes-sep">
 <section class="footnotes">
@@ -944,7 +945,7 @@ CAGR﹪：37.41%</p>
 <p><img src="../images/touji/touji0202.png" alt="量化日收益"></p>
 <p><img src="../images/touji/touji0204.png" alt="量化月收益"></p>
 <h3 id="逻辑的再梳理"><a class="header-anchor" href="#逻辑的再梳理">¶</a>逻辑的再梳理</h3>
-<h4 id="核心策略-v2"><a class="header-anchor" href="#核心策略-v2">¶</a>核心策略</h4>
+<h4 id="核心策略"><a class="header-anchor" href="#核心策略">¶</a>核心策略</h4>
 <ol>
 <li>行业多头轮动股票组合</li>
 <li>预期</li>
@@ -954,13 +955,13 @@ CAGR﹪：37.41%</p>
 <li>下跌：不符合预期，止损</li>
 <li>震荡：不符合预期，止损</li>
 </ul>
-<h4 id="选股-v3"><a class="header-anchor" href="#选股-v3">¶</a>选股</h4>
+<h4 id="选股-v2"><a class="header-anchor" href="#选股-v2">¶</a>选股</h4>
 <ol>
 <li>尽可能做到行业分散，每次开仓的相同行业不超过40%。</li>
 <li>以均线突破作为预期突破信号</li>
 <li>带量突破</li>
 </ol>
-<h4 id="不开仓择时-v2"><a class="header-anchor" href="#不开仓择时-v2">¶</a>不开仓择时</h4>
+<h4 id="不开仓择时"><a class="header-anchor" href="#不开仓择时">¶</a>不开仓择时</h4>
 <ol>
 <li>市场指标出现不开仓信号</li>
 <li>策略指标出现不开仓信号</li>
@@ -1090,7 +1091,7 @@ CAGR﹪：37.41%</p>
 <li>持仓周期内确定大概率止损，那么如何浮动止损。</li>
 </ol>
 <h2 id="策略逻辑的再梳理"><a class="header-anchor" href="#策略逻辑的再梳理">¶</a>策略逻辑的再梳理</h2>
-<h3 id="核心策略"><a class="header-anchor" href="#核心策略">¶</a>核心策略</h3>
+<h3 id="核心策略-v2"><a class="header-anchor" href="#核心策略-v2">¶</a>核心策略</h3>
 <ol>
 <li>行业多头轮动股票组合</li>
 <li>预期</li>
@@ -1100,13 +1101,13 @@ CAGR﹪：37.41%</p>
 <li>下跌：不符合预期，止损</li>
 <li>震荡：不符合预期，止损</li>
 </ul>
-<h3 id="选股"><a class="header-anchor" href="#选股">¶</a>选股</h3>
+<h3 id="选股-v3"><a class="header-anchor" href="#选股-v3">¶</a>选股</h3>
 <ol>
 <li>尽可能做到行业分散，每次开仓的相同行业不超过40%。</li>
 <li>以均线突破作为预期突破信号</li>
 <li>带量突破</li>
 </ol>
-<h3 id="不开仓择时"><a class="header-anchor" href="#不开仓择时">¶</a>不开仓择时</h3>
+<h3 id="不开仓择时-v2"><a class="header-anchor" href="#不开仓择时-v2">¶</a>不开仓择时</h3>
 <ol>
 <li>市场指标出现不开仓信号</li>
 <li>策略指标出现不开仓信号</li>
@@ -1209,15 +1210,15 @@ Omega：1.48<br>
     <url>/posts/940e2ce3.html</url>
     <content><![CDATA[<h2 id="成交金额百分位统计"><a class="header-anchor" href="#成交金额百分位统计">¶</a>成交金额百分位统计</h2>
 
-    <div id="echarts5422" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts3701" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts581 = echarts.init(document.getElementById('echarts5422'));
+    var echarts760 = echarts.init(document.getElementById('echarts3701'));
     
     $.get('https://stock.anno189.com/h5/data/market_amount_percent.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts581.setOption(data);
+        echarts760.setOption(data);
     });
     </script>
     
@@ -2602,7 +2603,7 @@ c. 时常出现激情交易。<br>
 <h4 id="交易逻辑"><a class="header-anchor" href="#交易逻辑">¶</a>交易逻辑</h4>
 <p>这个交易逻辑的基础是：市场在上涨的时候是轮流上涨的。那么我们只需要捕捉上涨的行业中上涨的个股买入即可。<br>
 因为是轮动，那么上涨之后必然会调整，这就是持股周期的问题，1天，3天，5天还是7天。在小周期结束的时候卖出。如果我们判断错了，也会在预制的周期内卖出的。如果对了，止盈就好了。</p>
-<h4 id="选股-v2"><a class="header-anchor" href="#选股-v2">¶</a>选股</h4>
+<h4 id="选股"><a class="header-anchor" href="#选股">¶</a>选股</h4>
 <p>技术面。多头上涨的行业和对头上涨的个股。</p>
 <h4 id="择时"><a class="header-anchor" href="#择时">¶</a>择时</h4>
 <p>买入：选出后次日开盘以开盘价格买入。<br>
@@ -5888,15 +5889,15 @@ c. 时常出现激情交易。<br>
     <url>/posts/9fee390f.html</url>
     <content><![CDATA[<h2 id="近3年中美10年国债利率差与沪深300关系"><a class="header-anchor" href="#近3年中美10年国债利率差与沪深300关系">¶</a>近3年中美10年国债利率差与沪深300关系</h2>
 
-    <div id="echarts2662" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts9252" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts2279 = echarts.init(document.getElementById('echarts2662'));
+    var echarts6089 = echarts.init(document.getElementById('echarts9252'));
     
     $.get('https://stock.anno189.com/h5/data/cnty-aty-300.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts2279.setOption(data);
+        echarts6089.setOption(data);
     });
     </script>
     
@@ -6427,18 +6428,18 @@ ROE 变化=最新财报 ROE 的同比变化；</p>
     <content><![CDATA[<h2 id="日成交金额行业集中度"><a class="header-anchor" href="#日成交金额行业集中度">¶</a>日成交金额行业集中度</h2>
 <h3 id="今天"><a class="header-anchor" href="#今天">¶</a>今天</h3>
 
-    <div id="echarts5934" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts1327" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts2460 = echarts.init(document.getElementById('echarts5934'));
+    var echarts2016 = echarts.init(document.getElementById('echarts1327'));
     
     $.get('https://stock.anno189.com/h5/data/moneryfocus.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts2460.setOption(data);
+        echarts2016.setOption(data);
     });
 
-    echarts2460.setOption(
+    echarts2016.setOption(
       {
         "tooltip": {
             "formatter": function (params) {return params.value[2] + ':' + params.value[3] + '亿';},
@@ -6450,18 +6451,18 @@ ROE 变化=最新财报 ROE 的同比变化；</p>
 <span id="more"></span>
 <h3 id="昨天"><a class="header-anchor" href="#昨天">¶</a>昨天</h3>
 
-    <div id="echarts5508" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts9555" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts1856 = echarts.init(document.getElementById('echarts5508'));
+    var echarts7400 = echarts.init(document.getElementById('echarts9555'));
     
     $.get('https://stock.anno189.com/h5/data/moneryfocus2.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts1856.setOption(data);
+        echarts7400.setOption(data);
     });
 
-    echarts1856.setOption(
+    echarts7400.setOption(
       {
         "tooltip": {
             "formatter": function (params) {return params.value[2] + ':' + params.value[3] + '亿';},
@@ -6472,18 +6473,18 @@ ROE 变化=最新财报 ROE 的同比变化；</p>
     
 <h3 id="前天"><a class="header-anchor" href="#前天">¶</a>前天</h3>
 
-    <div id="echarts7450" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts3907" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts8316 = echarts.init(document.getElementById('echarts7450'));
+    var echarts7349 = echarts.init(document.getElementById('echarts3907'));
     
     $.get('https://stock.anno189.com/h5/data/moneryfocus3.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts8316.setOption(data);
+        echarts7349.setOption(data);
     });
 
-    echarts8316.setOption(
+    echarts7349.setOption(
       {
         "tooltip": {
             "formatter": function (params) {return params.value[2] + ':' + params.value[3] + '亿';},
@@ -6494,18 +6495,18 @@ ROE 变化=最新财报 ROE 的同比变化；</p>
     
 <h3 id="4天前"><a class="header-anchor" href="#4天前">¶</a>4天前</h3>
 
-    <div id="echarts6449" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts5860" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts1416 = echarts.init(document.getElementById('echarts6449'));
+    var echarts1717 = echarts.init(document.getElementById('echarts5860'));
     
     $.get('https://stock.anno189.com/h5/data/moneryfocus4.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts1416.setOption(data);
+        echarts1717.setOption(data);
     });
 
-    echarts1416.setOption(
+    echarts1717.setOption(
       {
         "tooltip": {
             "formatter": function (params) {return params.value[2] + ':' + params.value[3] + '亿';},
@@ -6516,18 +6517,18 @@ ROE 变化=最新财报 ROE 的同比变化；</p>
     
 <h3 id="5天前"><a class="header-anchor" href="#5天前">¶</a>5天前</h3>
 
-    <div id="echarts6982" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts8357" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts7128 = echarts.init(document.getElementById('echarts6982'));
+    var echarts8146 = echarts.init(document.getElementById('echarts8357'));
     
     $.get('https://stock.anno189.com/h5/data/moneryfocus5.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts7128.setOption(data);
+        echarts8146.setOption(data);
     });
 
-    echarts7128.setOption(
+    echarts8146.setOption(
       {
         "tooltip": {
             "formatter": function (params) {return params.value[2] + ':' + params.value[3] + '亿';},
@@ -6625,44 +6626,44 @@ ROE 变化=最新财报 ROE 的同比变化；</p>
     <url>/posts/648576a4.html</url>
     <content><![CDATA[<h2 id="概念趋势相对权重"><a class="header-anchor" href="#概念趋势相对权重">¶</a>概念趋势相对权重</h2>
 
-    <div id="echarts2336" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts6765" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts3636 = echarts.init(document.getElementById('echarts2336'));
+    var echarts4193 = echarts.init(document.getElementById('echarts6765'));
     
     $.get('https://stock.anno189.com/h5/data/conceptspcorrweight.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts3636.setOption(data);
+        echarts4193.setOption(data);
     });
     </script>
     
 <span id="more"></span>
 <h2 id="概念趋势相对权重-v2"><a class="header-anchor" href="#概念趋势相对权重-v2">¶</a>概念趋势相对权重</h2>
 
-    <div id="echarts2149" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts5977" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts6289 = echarts.init(document.getElementById('echarts2149'));
+    var echarts2677 = echarts.init(document.getElementById('echarts5977'));
     
     $.get('https://stock.anno189.com/h5/data/conceptwrweight.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts6289.setOption(data);
+        echarts2677.setOption(data);
     });
     </script>
     
 <h3 id="概念趋势相关性"><a class="header-anchor" href="#概念趋势相关性">¶</a>概念趋势相关性</h3>
 
-    <div id="echarts7575" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts6357" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts3916 = echarts.init(document.getElementById('echarts7575'));
+    var echarts2044 = echarts.init(document.getElementById('echarts6357'));
     
     $.get('https://stock.anno189.com/h5/data/conceptcorrweight.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts3916.setOption(data);
+        echarts2044.setOption(data);
     });
     </script>
     
@@ -6703,76 +6704,76 @@ ROE 变化=最新财报 ROE 的同比变化；</p>
     <url>/posts/8620333.html</url>
     <content><![CDATA[<h3 id="三级行业涨跌趋势相对权重"><a class="header-anchor" href="#三级行业涨跌趋势相对权重">¶</a>三级行业涨跌趋势相对权重</h3>
 
-    <div id="echarts1500" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts6241" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts6882 = echarts.init(document.getElementById('echarts1500'));
+    var echarts4147 = echarts.init(document.getElementById('echarts6241'));
     
     $.get('https://stock.anno189.com/h5/data/industryweight_wr.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts6882.setOption(data);
+        echarts4147.setOption(data);
     });
     </script>
     
 <span id="more"></span>
 <h3 id="二级行业涨跌趋势热力图（月）"><a class="header-anchor" href="#二级行业涨跌趋势热力图（月）">¶</a>二级行业涨跌趋势热力图（月）</h3>
 
-    <div id="echarts1002" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts5606" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts9695 = echarts.init(document.getElementById('echarts1002'));
+    var echarts9188 = echarts.init(document.getElementById('echarts5606'));
     
     $.get('https://stock.anno189.com/h5/data/industryweight_month.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts9695.setOption(data);
+        echarts9188.setOption(data);
     });
     </script>
     
 <h2 id="三级行业趋势相对权重"><a class="header-anchor" href="#三级行业趋势相对权重">¶</a>三级行业趋势相对权重</h2>
 
-    <div id="echarts6937" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts9" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts3688 = echarts.init(document.getElementById('echarts6937'));
+    var echarts9642 = echarts.init(document.getElementById('echarts9'));
     
     $.get('https://stock.anno189.com/h5/data/industryweight_spcorr.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts3688.setOption(data);
+        echarts9642.setOption(data);
     });
     </script>
     
 <h3 id="三级行业21日趋势相关性"><a class="header-anchor" href="#三级行业21日趋势相关性">¶</a>三级行业21日趋势相关性</h3>
 
-    <div id="echarts178" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts8085" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts1958 = echarts.init(document.getElementById('echarts178'));
+    var echarts1227 = echarts.init(document.getElementById('echarts8085'));
     
     $.get('https://stock.anno189.com/h5/data/industryweight_corr.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts1958.setOption(data);
+        echarts1227.setOption(data);
     });
     </script>
     
 <h2 id="三级行业相关性对照"><a class="header-anchor" href="#三级行业相关性对照">¶</a>三级行业相关性对照</h2>
 <h3 id="近5日-v2"><a class="header-anchor" href="#近5日-v2">¶</a>近5日</h3>
 
-    <div id="echarts7218" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts3698" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts6140 = echarts.init(document.getElementById('echarts7218'));
+    var echarts9611 = echarts.init(document.getElementById('echarts3698'));
     
     $.get('https://stock.anno189.com/h5/data/industrycorr015.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts6140.setOption(data);
+        echarts9611.setOption(data);
     });
 
-    echarts6140.setOption(
+    echarts9611.setOption(
       {
         "tooltip": {
             "formatter": function (params) {return params.value[3] + '(' + params.value[2] + ')';},  
@@ -6783,18 +6784,18 @@ ROE 变化=最新财报 ROE 的同比变化；</p>
     
 <h3 id="近21日-v2"><a class="header-anchor" href="#近21日-v2">¶</a>近21日</h3>
 
-    <div id="echarts7689" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts3673" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts1820 = echarts.init(document.getElementById('echarts7689'));
+    var echarts1554 = echarts.init(document.getElementById('echarts3673'));
     
     $.get('https://stock.anno189.com/h5/data/industrycorr0121.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts1820.setOption(data);
+        echarts1554.setOption(data);
     });
 
-    echarts1820.setOption(
+    echarts1554.setOption(
       {
         "tooltip": {
             "formatter": function (params) {return params.value[3] + '(' + params.value[2] + ')';},  
@@ -6805,15 +6806,15 @@ ROE 变化=最新财报 ROE 的同比变化；</p>
     
 <h2 id="行业趋势票"><a class="header-anchor" href="#行业趋势票">¶</a>行业趋势票</h2>
 
-    <div id="echarts9456" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts5578" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts5094 = echarts.init(document.getElementById('echarts9456'));
+    var echarts7173 = echarts.init(document.getElementById('echarts5578'));
     
     $.get('https://stock.anno189.com/h5/data/industrystock_corr.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts5094.setOption(data);
+        echarts7173.setOption(data);
     });
     </script>
     
@@ -6854,76 +6855,76 @@ ROE 变化=最新财报 ROE 的同比变化；</p>
     <url>/posts/66abe924.html</url>
     <content><![CDATA[<h2 id="宽指涨跌趋势相对权重"><a class="header-anchor" href="#宽指涨跌趋势相对权重">¶</a>宽指涨跌趋势相对权重</h2>
 
-    <div id="echarts5240" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts6816" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts3248 = echarts.init(document.getElementById('echarts5240'));
+    var echarts6406 = echarts.init(document.getElementById('echarts6816'));
     
     $.get('https://stock.anno189.com/h5/data/indexweight_wr.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts3248.setOption(data);
+        echarts6406.setOption(data);
     });
     </script>
     
 <span id="more"></span>
 <h3 id="宽指涨跌趋势热力图（月）"><a class="header-anchor" href="#宽指涨跌趋势热力图（月）">¶</a>宽指涨跌趋势热力图（月）</h3>
 
-    <div id="echarts2869" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts3834" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts8401 = echarts.init(document.getElementById('echarts2869'));
+    var echarts92 = echarts.init(document.getElementById('echarts3834'));
     
     $.get('https://stock.anno189.com/h5/data/indexweight_month.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts8401.setOption(data);
+        echarts92.setOption(data);
     });
     </script>
     
 <h3 id="宽指趋势相对权重"><a class="header-anchor" href="#宽指趋势相对权重">¶</a>宽指趋势相对权重</h3>
 
-    <div id="echarts1257" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts5102" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts3479 = echarts.init(document.getElementById('echarts1257'));
+    var echarts6518 = echarts.init(document.getElementById('echarts5102'));
     
     $.get('https://stock.anno189.com/h5/data/indexweight_spcorr.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts3479.setOption(data);
+        echarts6518.setOption(data);
     });
     </script>
     
 <h3 id="宽指21日趋势相关性"><a class="header-anchor" href="#宽指21日趋势相关性">¶</a>宽指21日趋势相关性</h3>
 
-    <div id="echarts3236" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts6267" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts1638 = echarts.init(document.getElementById('echarts3236'));
+    var echarts277 = echarts.init(document.getElementById('echarts6267'));
     
     $.get('https://stock.anno189.com/h5/data/indexweight_corr.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts1638.setOption(data);
+        echarts277.setOption(data);
     });
     </script>
     
 <h2 id="主要宽指取数相关性对照"><a class="header-anchor" href="#主要宽指取数相关性对照">¶</a>主要宽指取数相关性对照</h2>
 <h3 id="近5日"><a class="header-anchor" href="#近5日">¶</a>近5日</h3>
 
-    <div id="echarts2769" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts5243" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts2874 = echarts.init(document.getElementById('echarts2769'));
+    var echarts1357 = echarts.init(document.getElementById('echarts5243'));
     
     $.get('https://stock.anno189.com/h5/data/indexcorr015.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts2874.setOption(data);
+        echarts1357.setOption(data);
     });
 
-    echarts2874.setOption(
+    echarts1357.setOption(
       {
         "tooltip": {
             "formatter": function (params) {return params.value[3] + '(' + params.value[2] + ')';},  
@@ -6934,18 +6935,18 @@ ROE 变化=最新财报 ROE 的同比变化；</p>
     
 <h3 id="近21日"><a class="header-anchor" href="#近21日">¶</a>近21日</h3>
 
-    <div id="echarts7536" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts2600" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts4900 = echarts.init(document.getElementById('echarts7536'));
+    var echarts5041 = echarts.init(document.getElementById('echarts2600'));
     
     $.get('https://stock.anno189.com/h5/data/indexcorr0121.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts4900.setOption(data);
+        echarts5041.setOption(data);
     });
 
-    echarts4900.setOption(
+    echarts5041.setOption(
       {
         "tooltip": {
             "formatter": function (params) {return params.value[3] + '(' + params.value[2] + ')';},  
@@ -7016,101 +7017,101 @@ ROE 变化=最新财报 ROE 的同比变化；</p>
     <content><![CDATA[<h2 id="成分股60日线状态统计"><a class="header-anchor" href="#成分股60日线状态统计">¶</a>成分股60日线状态统计</h2>
 <h3 id="二级行业60日百分位"><a class="header-anchor" href="#二级行业60日百分位">¶</a>二级行业60日百分位</h3>
 
-    <div id="echarts1320" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts3795" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts4455 = echarts.init(document.getElementById('echarts1320'));
+    var echarts6505 = echarts.init(document.getElementById('echarts3795'));
     
     $.get('https://stock.anno189.com/h5/data/ins60daylevel2.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts4455.setOption(data);
+        echarts6505.setOption(data);
     });
     </script>
     
 <span id="more"></span>
 <h3 id="二级行业20-60日百分位"><a class="header-anchor" href="#二级行业20-60日百分位">¶</a>二级行业20-60日百分位</h3>
 
-    <div id="echarts1006" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts8885" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts9542 = echarts.init(document.getElementById('echarts1006'));
+    var echarts6599 = echarts.init(document.getElementById('echarts8885'));
     
     $.get('https://stock.anno189.com/h5/data/ins2060daylevel2.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts9542.setOption(data);
+        echarts6599.setOption(data);
     });
     </script>
     
 <h3 id="三级行业60日百分位"><a class="header-anchor" href="#三级行业60日百分位">¶</a>三级行业60日百分位</h3>
 
-    <div id="echarts7571" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts1933" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts7189 = echarts.init(document.getElementById('echarts7571'));
+    var echarts8738 = echarts.init(document.getElementById('echarts1933'));
     
     $.get('https://stock.anno189.com/h5/data/ins60daylevel3.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts7189.setOption(data);
+        echarts8738.setOption(data);
     });
     </script>
     
 <h3 id="三级行业20-60日百分位"><a class="header-anchor" href="#三级行业20-60日百分位">¶</a>三级行业20-60日百分位</h3>
 
-    <div id="echarts2442" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts3395" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts2698 = echarts.init(document.getElementById('echarts2442'));
+    var echarts1046 = echarts.init(document.getElementById('echarts3395'));
     
     $.get('https://stock.anno189.com/h5/data/ins2060daylevel3.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts2698.setOption(data);
+        echarts1046.setOption(data);
     });
     </script>
     
 <h2 id="分时涨跌统计"><a class="header-anchor" href="#分时涨跌统计">¶</a>分时涨跌统计</h2>
 <h3 id="15分钟分时"><a class="header-anchor" href="#15分钟分时">¶</a>15分钟分时</h3>
 
-    <div id="echarts7107" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts2310" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts2194 = echarts.init(document.getElementById('echarts7107'));
+    var echarts7866 = echarts.init(document.getElementById('echarts2310'));
     
     $.get('https://stock.anno189.com/h5/data/ins15minlevel2.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts2194.setOption(data);
+        echarts7866.setOption(data);
     });
     </script>
     
 <h3 id="30分钟分时"><a class="header-anchor" href="#30分钟分时">¶</a>30分钟分时</h3>
 
-    <div id="echarts5108" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts606" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts1402 = echarts.init(document.getElementById('echarts5108'));
+    var echarts7243 = echarts.init(document.getElementById('echarts606'));
     
     $.get('https://stock.anno189.com/h5/data/ins30minlevel2.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts1402.setOption(data);
+        echarts7243.setOption(data);
     });
     </script>
     
 <h3 id="60分钟分时"><a class="header-anchor" href="#60分钟分时">¶</a>60分钟分时</h3>
 
-    <div id="echarts8796" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts3272" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts5837 = echarts.init(document.getElementById('echarts8796'));
+    var echarts183 = echarts.init(document.getElementById('echarts3272'));
     
     $.get('https://stock.anno189.com/h5/data/ins60minlevel2.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts5837.setOption(data);
+        echarts183.setOption(data);
     });
     </script>
     
@@ -8110,30 +8111,30 @@ stock_adj 在运算中会漏掉当前某一天的数据，（原因不明，可�
     <url>/posts/5a1211fa.html</url>
     <content><![CDATA[<h2 id="菜篮子III号组合应用组净值-v2"><a class="header-anchor" href="#菜篮子III号组合应用组净值-v2">¶</a>菜篮子III号组合应用组净值</h2>
 
-    <div id="echarts9214" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts815" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts8395 = echarts.init(document.getElementById('echarts9214'));
+    var echarts7526 = echarts.init(document.getElementById('echarts815'));
     
     $.get('https://stock.anno189.com/h5/data/str60p20_super_003_echarts_lines.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts8395.setOption(data);
+        echarts7526.setOption(data);
     });
     </script>
     
 <span id="more"></span>
 <h2 id="菜篮子III号组合应用组行业分布"><a class="header-anchor" href="#菜篮子III号组合应用组行业分布">¶</a>菜篮子III号组合应用组行业分布</h2>
 
-    <div id="echarts2106" style="width: 100%;height: 500px;margin: 0 auto"></div>
+    <div id="echarts6739" style="width: 100%;height: 500px;margin: 0 auto"></div>
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
     
     <script type="text/javascript">
-    var echarts1874 = echarts.init(document.getElementById('echarts2106'));
+    var echarts978 = echarts.init(document.getElementById('echarts6739'));
     
     $.get('https://stock.anno189.com/h5/data/str60p20_super_003_echarts_pie.json').done(function (data) {
         // alert(JSON.stringify(data)); 
-        echarts1874.setOption(data);
+        echarts978.setOption(data);
     });
     </script>
     
@@ -8343,3 +8344,4 @@ selenium：</p>
       </tags>
   </entry>
 </search>
+earch>
